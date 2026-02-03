@@ -22,7 +22,7 @@ while True:
         print("-" * 30)
         break
     else:
-        choice = input("CHECK✅ = 1 |or| FOLD❌ = 0 ")
+        choice = input("CONTINUE✅ = 1 |or| STOP❌ = 0 ")
         if choice == "1":
             card = random.choice(cards)
             suit = random.choice(suits)
@@ -57,7 +57,7 @@ while True:
         print("-" * 20)
         break
     else:
-        choice = input("CHECK✅ = 1 |or| FOLD❌ = 0 ")
+        choice = input("CONTINUE✅ = 1 |or| STOP❌ = 0 ")
         if choice == "1":
             card = random.choice(cards)
             suit = random.choice(suits)
