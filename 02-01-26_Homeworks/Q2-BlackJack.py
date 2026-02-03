@@ -3,7 +3,7 @@ suits = ["❤️", "♦️", "♣️", "♠️"]
 cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"]
 print("----- תור שחקן 1 -----")
 player_1 = 0
-p1_cards = " "
+p1_cards =""
 for i in [1 , 2]:
     suit_1 = random.choice(suits)
     card = random.choice(cards)
@@ -60,8 +60,8 @@ while True:
         choice = input("CONTINUE✅ = 1 |or| STOP❌ = 0 ")
         if choice == "1":
             card = random.choice(cards)
-            suit = random.choice(suits)
-            p2_cards = p2_cards + str(card) + suit + " "
+            p2_suit = random.choice(suits)
+            p2_cards = p2_cards + str(card) + p2_suit + " "
             if card == "A":
                 player_2 = player_2 + 1
             elif card == "J" or card == "Q" or card == "K":
