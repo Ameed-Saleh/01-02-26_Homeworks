@@ -79,8 +79,8 @@ while True:
             break
 print("")
 print(" -------- results -------- ")
-print(f"{RED} player 1 cards = {RESET}", p1_cards , f"{BLUE} total cards =  {RESET}", str(p_1))
-print(f"{RED} player 2 cards = {RESET}", p2_cards ,f"{BLUE} total cards =  {RESET}", str(p_2))
+print(f"{RED} player 1 cards = {RESET}", p1_cards , f"{BLUE} total cards =  {RESET}", p_1)
+print(f"{RED} player 2 cards = {RESET}", p2_cards ,f"{BLUE} total cards =  {RESET}", p_2)
 if p_1 > 21 and p_2 > 21:
     print("both of you loose‼️💤!")
 elif p_1 > 21 :
