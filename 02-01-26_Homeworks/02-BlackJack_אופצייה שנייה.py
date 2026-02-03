@@ -7,7 +7,7 @@ suits = ["❤️", "♦️", "♣️", "♠️"]
 cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q" , "K", "A"]
 p_1 = 0
 print(f"{GREEN} player 1 start {RESET}")
-p1_cards =""
+p1_cards =" "
 
 for i in [1 , 2]:
     suit = random.choice(suits)
@@ -41,7 +41,7 @@ while True:
                 p_1 += card
         else:
             break
-print("")
+print(" ")
 p_2 = 0
 print(f"{GREEN} player 2 start {RESET}")
 p2_cards =""
@@ -77,8 +77,8 @@ while True:
                 p_2 += card
         else:
             break
-print("")
-print(" -------- results -------- ")
+print(" ")
+print(f" {GREEN} ------------------  results  ------------------ {RESET}")
 print(f"{RED} player 1 cards = {RESET}", p1_cards , f"{BLUE} total cards =  {RESET}", p_1)
 print(f"{RED} player 2 cards = {RESET}", p2_cards ,f"{BLUE} total cards =  {RESET}", p_2)
 if p_1 > 21 and p_2 > 21:
@@ -92,4 +92,4 @@ elif p_1 > p_2:
 elif p_2 > p_1:
     print("player 2 is the winner🥈!")
 else:
-    print("--🫂TEKOOOOO 🏼--")
+    print("--🫂TEKOOOOO --")

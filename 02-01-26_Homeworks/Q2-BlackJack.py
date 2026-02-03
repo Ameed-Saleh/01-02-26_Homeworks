@@ -3,7 +3,7 @@ suits = ["❤️", "♦️", "♣️", "♠️"]
 cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"]
 print("----- תור שחקן 1 -----")
 player_1 = 0
-p1_cards = ""
+p1_cards = " "
 for i in [1 , 2]:
     suit_1 = random.choice(suits)
     card = random.choice(cards)
@@ -35,7 +35,7 @@ while True:
                 player_1 = player_1 + card
         else:
             break
-print("")
+print(" ")
 print("----- תור שחקן2  -----")
 player_2 = 0
 p2_cards = ""
@@ -70,10 +70,10 @@ while True:
                 player_2 = player_2 + card
         else:
             break
-print("")
+print(" ")
 print("תוצאות סופיות 🟰")
-print("שחקן 1: " , player_1)
-print("שחקן 2: " , player_2)
+print("הקלפים של שחקן 1: " , p1_cards , "סכומם: " , player_1)
+print("הקלפים של שחקן 2: " , p2_cards , "סכומם: " , player_2)
 if player_1 > 21 and player_2 > 21:
     print("שניכם נפסלתם‼️💤")
 elif player_1 > 21:
