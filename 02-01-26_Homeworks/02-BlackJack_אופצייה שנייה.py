@@ -36,7 +36,7 @@ while True:
             if card == "J" or card == "Q" or card == "K":
                 p_1 += 10
             elif card == "A":
-                p_1 -= 1
+                p_1 += 1
             else:
                 p_1 += card
         else:
